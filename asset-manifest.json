@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/visualize-binary-tree-react/static/css/main.9ec064d1.css",
+    "main.js": "/visualize-binary-tree-react/static/js/main.ed68fe12.js",
+    "index.html": "/visualize-binary-tree-react/index.html",
+    "main.9ec064d1.css.map": "/visualize-binary-tree-react/static/css/main.9ec064d1.css.map",
+    "main.ed68fe12.js.map": "/visualize-binary-tree-react/static/js/main.ed68fe12.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ec064d1.css",
+    "static/js/main.ed68fe12.js"
+  ]
+}
