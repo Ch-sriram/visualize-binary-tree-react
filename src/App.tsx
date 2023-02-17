@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import * as React from 'react';
+import InputSubmit from './components/InputSubmit';
+import RenderTree from './components/RenderTree';
 
-function App() {
+// App Component
+const App = () => {
+  const inputRef = React.useRef<HTMLTextAreaElement>(null);
+  const [rawData, setRawData] = React.useState<string>('');
+
+  const onSubmitBtnClick = () => {
+    if (inputRef.current) {
+      setRawData(inputRef.current.value);
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <InputSubmit onClick={onSubmitBtnClick} ref={inputRef} />
+      {rawData && <RenderTree rawData={rawData} />}
     </div>
   );
-}
+};
 
 export default App;
