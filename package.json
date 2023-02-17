@@ -1,8 +1,10 @@
 {
-  "name": "binary-tree-react",
+  "homepage": "https://Ch-sriram.github.io/visualize-binary-tree-react",
+  "name": "visualize-binary-tree-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-d3-tree": "^3.5.0",
     "react-dom": "^18.2.0",
@@ -15,6 +17,8 @@
     "typescript": "^4.9.5"
   },
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -b main -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
